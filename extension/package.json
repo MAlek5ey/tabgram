@@ -1,0 +1,24 @@
+{
+  "name": "tabgram",
+  "displayName": "Tabgram",
+  "description": "Attach a Telegram bot to the Claude Code session in the active terminal tab",
+  "publisher": "local",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/MAlek5ey/tabgram.git" },
+  "homepage": "https://github.com/MAlek5ey/tabgram#readme",
+  "bugs": { "url": "https://github.com/MAlek5ey/tabgram/issues" },
+  "engines": { "vscode": "^1.80.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      { "command": "tabgram.connect", "title": "Connect Telegram bot", "category": "Tabgram" },
+      { "command": "tabgram.disconnect", "title": "Disconnect Telegram bot", "category": "Tabgram" }
+    ],
+    "keybindings": [
+      { "command": "tabgram.connect", "key": "ctrl+alt+t", "mac": "cmd+alt+t", "when": "terminalFocus" },
+      { "command": "tabgram.disconnect", "key": "ctrl+alt+shift+t", "mac": "cmd+alt+shift+t", "when": "terminalFocus" }
+    ]
+  }
+}

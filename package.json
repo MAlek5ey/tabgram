@@ -1,0 +1,17 @@
+{
+  "name": "tabgram",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Attach a Telegram bot to a Claude Code session in a VS Code terminal tab with one hotkey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MAlek5ey/tabgram.git"
+  },
+  "homepage": "https://github.com/MAlek5ey/tabgram#readme",
+  "bugs": {
+    "url": "https://github.com/MAlek5ey/tabgram/issues"
+  },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" }
+}
